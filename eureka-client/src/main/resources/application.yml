@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: service-client
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+  instance:
+    instance-id: service-client8001
+  prefer-ip-address: true
+
+info:
+  app.name: springcloud
+  company.name: www.qly.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
